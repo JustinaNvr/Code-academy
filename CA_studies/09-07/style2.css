@@ -1,0 +1,34 @@
+body{
+    font-family: "Agency FB";
+}
+div{
+    background: azure;
+    margin: 20px;
+    padding: 20px;
+    overflow: hidden;
+    padding-right: 60px;
+}
+.logo{
+    text-align: left;
+}
+.menu{
+    float: right;
+}
+.firstimg{
+   float: right;
+    margin-left: 20px;
+}
+.secondimg{
+    float: left;
+    margin-right: 30px;
+}
+.second{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.forth{
+    padding-top: 40px;
+}
+.fifth{
+    text-align: center;
+}
