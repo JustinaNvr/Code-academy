@@ -1,3 +1,15 @@
 body{
     font-family: "Agency FB";
 }
+.lore{
+    width: 300px;
+    margin: 5px;
+    padding: 5px;
+    text-align: justify;
+}
+.ima{
+    height: 375px;
+}
+img{
+    padding: 10px;
+}
