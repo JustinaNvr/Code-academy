@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Block</title>
+    <style>
+        body{
+            font-family: monospace;
+            font-size: 50px;
+        }
+        .main{
+            /*width: 100vh;*/
+            height: 100%;
+            width: 100%;
+            background-image: url("https://wallpaperaccess.com/full/2155719.jpg");
+            background-size: cover;
+            /*justify-content: center;*/
+            /*align-items: center;*/
+            display: block;
+        }
+        .first{
+            height: 266px;
+            width: 266px;
+            padding: 15px;
+            border: 2px solid grey;
+            background: lavenderblush;
+            opacity: 0.5;
+            display: block;
+            background-clip: content-box;
+          }
+        .second{
+            height: 246px;
+            width: 246px;
+            padding: 25px;
+            border: 2px solid grey;
+            background: lavenderblush;
+            opacity: 0.5;
+            display: block;
+            background-clip: content-box;
+            }
+        .third{
+            display: block;
+            width: 45%;
+            height: 100px;
+            background: lightsalmon;
+            opacity: 0.6;
+        }
+        .forth{
+            height: 250px;
+            width: 200px;
+            border: 5px solid grey;
+            background-image: url("https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVuJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80");
+            background-repeat: no-repeat;
+            background-position: center;
+            display: block;
+        }
+        button{
+            display: block;
+            width: 50%;
+            border: 0.5px dotted mediumpurple;
+            background: mediumpurple;
+            opacity: 0.5;
+            height: 50px;
+            padding: 5px;
+            margin: 5px;
+            background-clip: content-box;
+            cursor: pointer;
+        }
+        button:active {
+            background-color: mediumpurple;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="first">1st</div>
+        <div class="second">2nd</div>
+        <div class="third">3rd</div>
+        <div class="forth">4th</div>
+        <button type="submit" value="button">
+            Button
+        </button>
+    </div>
+</body>
+</html>
