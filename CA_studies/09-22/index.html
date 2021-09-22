@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Page</title>
+    <style>
+        .slide {
+            height: 100vh;
+        }
+        .textblock {
+            height: 10vh;
+        }
+        .footer_im {
+            height: 30px;
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header class="fixed-top d-flex justify-content-center py-3 ps-3 mb-4 bg-light border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <img class="bi me-2" src="image/city.jpg" alt="icon" width="40" height="32">
+            <span class="fs-4">Simple header</span>
+        </a>
+        <ul class="nav nav-pills text-dark">
+            <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">About</a></li>
+        </ul>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+    </header>
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active slide">
+                    <img src="image/dub.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item slide">
+                    <img src="image/ny.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item slide">
+                    <img src="image/mscw.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container mt-4 mb-4">
+            <div class="row">
+                <div class="col-12 col-md-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur, blanditiis dolorem eligendi eos excepturi fugiat illo illum iure, maxime neque quaerat quam quod reprehenderit sapiente similique sint. Dolores, veritatis.</div>
+                <div class="col-12 col-md-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur, blanditiis dolorem eligendi eos excepturi fugiat illo illum iure, maxime neque quaerat quam quod reprehenderit sapiente similique sint. Dolores, veritatis.</div>
+                <div class="col-12 col-md-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur, blanditiis dolorem eligendi eos excepturi fugiat illo illum iure, maxime neque quaerat quam quod reprehenderit sapiente similique sint. Dolores, veritatis.</div>
+            </div>
+        </div>
+        <div class="container mt-4 mb-4">
+            <div class="row mt-2 mb-4 justify-content-md-center">
+                <div class="col-6 border border-secondary w-50 textblock">
+                </div>
+            </div>
+            <div class="row mt-2 mb-2 justify-content-center">
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card ms-2 mb-2" style="width: 20rem;">
+                        <img src="image/klp.jpg" alt="card image">
+                        <div class="card-body">
+                            <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card ms-2 mb-2" style="width: 20rem;">
+                        <img src="image/vno.jpg" alt="card image">
+                        <div class="card-body">
+                            <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card ms-2 mb-2" style="width: 20rem;">
+                        <img src="image/nida.jpg" alt="card image">
+                        <div class="card-body">
+                            <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4 mb-4">
+            <form class="row">
+                <div class="col-2">
+                    <label for="exampleFormControlInput1" class="visually-hidden">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="col-2">
+                    <label for="exampleFormControlTextarea1" class="visually-hidden">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Enter your Questions"></textarea>
+                </div>
+                <div class="col-2">
+                    <button type="submit" class="btn btn-outline-secondary mb-3">Submit</button>
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                    <ul class="nav nav-pills text-dark ">
+                        <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">NAV</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">NAV</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">NAV</a></li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+        <footer class="container mt-4 d-flex align-items-center justify-content-center">
+            <ul class="nav list-unstyled">
+                <li class="nav-item">
+                    <img class="bi me-2 footer_im" src="image/fb.jpg" alt="icon">
+                </li>
+                <li class="nav-item">
+                    <img class="bi me-2 footer_im" src="image/twit.jpg" alt="icon">
+                </li>
+                <li class="nav-item">
+                    <img class="bi me-2 footer_im" src="image/lin.jpg" alt="icon">
+                </li>
+                <li class="nav-item">
+                    <img class="bi me-2 footer_im" src="image/ig.jpg" alt="icon">
+                </li>
+                <li class="nav-item">
+                    <p class="float-end"><a href="#">Back to top</a></p>
+                </li>
+            </ul>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
