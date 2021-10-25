@@ -1,13 +1,3 @@
-// UŽDUOTIS: Sukurti jam (jo vidui) tokį markup naudojant JavaScipt:
-//
-// <h2> tag’as su tekstu;
-//
-// <p> tag’as su tekstu;
-//
-// <ul> tag’as, kurio viduje yra 5 <li> su paveiksliukais;
-//
-// <p> tag’as su tekstu.
-
 let div_ = document.getElementById('main');
 
 let hh2 = document.createElement('h2');
@@ -25,8 +15,6 @@ div_.appendChild(p1);
 let ul_ = document.createElement('ul');
 
 for (let i = 0; i <= 5; i++) {
-    // ulElement.innerHTML =  ulElement.innerHTML + `<li>${name}</li>`;
-    // ulElement.innerHTML += `<li>${name}</li>`;
 
     let li_ = document.createElement('li');
 
