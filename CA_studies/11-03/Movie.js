@@ -10,6 +10,6 @@ class Movie {
         return  `Movie '${this.name}' was created in ${this.year} by director ${this.director}.`;
     }
     getProfit(){
-        return `Movie '${this.name}' had a budget of ${this.budget} and since ${this.year} it has made a profit of ${this.income}`;
+        return `Movie '${this.name}' had a budget of ${this.budget} and since ${this.year} it has made an income of ${this.income}`;
     }
 }
