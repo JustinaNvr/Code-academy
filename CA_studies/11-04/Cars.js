@@ -1,15 +1,3 @@
-//Naudojant ES6 klases sukurkite automobilių objektų kūrimo konstruktorių (Car),
-// kuris turės šias savybes:
-// make
-//
-// model
-//
-// year
-// ir metodus:
-// getIntroduction, kuris grąžins pilną pavadinimą (su make ir model).
-//
-// getAge, kuris gražins “10 metų arba naujesnis”, jei automobilio amžius yra 10 metų arba naujesnis arba “11 metų arba senesnis”, jei automobilio amžius yra 11 metų arba senesnis (šio metodo logikai naudokite ternary operatorių ir Date() metodą)
-
 class Cars {
     constructor(make, model, year) {
         this.make = make;
