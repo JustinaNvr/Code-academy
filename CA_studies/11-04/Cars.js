@@ -13,6 +13,6 @@ class Cars {
         let today = new Date().getFullYear();
         let age = today - this.year;
 
-        return age <= 10 ? `Car ${this.make} ${this.model} is made 10 years ago or earlier` : `Car ${this.make} ${this.model} is made 11 years ago or later`;
+        return age <= 10 ? `Car ${this.make} ${this.model} is made in ${this.year} and is 10 years old or newer` : `Car ${this.make} ${this.model} is made in ${this.year} and is 11 years old or older`;
     }
 }
