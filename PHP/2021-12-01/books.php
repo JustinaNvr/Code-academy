@@ -29,12 +29,10 @@ function arrayToTable($books)
 {
     echo '<table>';
 
-    // Table header
     foreach ($books as $key=>$value) {
         echo '<th>'.$key.'</th>';
     }
 
-    // Table body
     foreach ($books as $value) {
         echo '<tr>';
         foreach ($value as $element) {
