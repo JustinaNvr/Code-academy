@@ -1,0 +1,6 @@
+2021/11/25 16:19:52 [error] 32#32: *2 directory index of "/home/code-academy/PHP/" is forbidden, client: 172.18.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8081"
+2021/11/25 16:25:31 [error] 32#32: *5 directory index of "/home/code-academy/PHP/" is forbidden, client: 172.18.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8081"
+2021/11/25 16:25:32 [error] 32#32: *5 directory index of "/home/code-academy/PHP/" is forbidden, client: 172.18.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8081"
+2021/11/25 16:27:07 [error] 32#32: *5 directory index of "/home/code-academy/PHP/" is forbidden, client: 172.18.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8081"
+2021/11/25 17:30:31 [error] 32#32: *16 directory index of "/home/code-academy/PHP/" is forbidden, client: 172.18.0.1, server: , request: "GET / HTTP/1.1", host: "192.168.0.166:8081"
+2021/11/25 18:55:43 [error] 32#32: *19 directory index of "/home/code-academy/PHP/" is forbidden, client: 172.18.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8081"
