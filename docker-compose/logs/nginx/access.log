@@ -70,3 +70,8 @@
 172.18.0.1 - - [30/Nov/2021:17:06:47 +0000] "GET /2021-11-30/app.php HTTP/1.1" 200 28 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
 172.18.0.1 - - [30/Nov/2021:17:07:19 +0000] "GET /2021-11-30/app.php HTTP/1.1" 200 28 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
 172.18.0.1 - - [30/Nov/2021:17:07:38 +0000] "GET /2021-11-30/app.php HTTP/1.1" 200 28 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+172.18.0.1 - - [01/Dec/2021:16:05:16 +0000] "GET /2021-11-29/app.php HTTP/1.1" 200 98 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+172.18.0.1 - - [01/Dec/2021:16:05:16 +0000] "GET /favicon.ico HTTP/1.1" 404 555 "http://localhost:8081/2021-11-29/app.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+172.18.0.1 - - [01/Dec/2021:16:05:21 +0000] "GET /2021-12-01/app.php HTTP/1.1" 200 50 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+172.18.0.1 - - [01/Dec/2021:16:06:50 +0000] "GET /2021-12-01/app.php HTTP/1.1" 200 89 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+172.18.0.1 - - [01/Dec/2021:16:07:06 +0000] "GET /2021-12-01/app.php HTTP/1.1" 200 93 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
