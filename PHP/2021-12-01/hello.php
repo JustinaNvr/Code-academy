@@ -4,6 +4,4 @@
 
 $hello = 'hello';
 
-$arr = str_split($hello);
-
-echo "\"$arr[0]\", \"$arr[1]\", \"$arr[4]\"";
+echo "\"$hello[0]\", \"$hello[1]\", \"$hello[4]\"";
