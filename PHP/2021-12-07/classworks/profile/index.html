@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>21-12-07</title>
+  <style>
+    body{
+      font-family: monospace;
+    }
+    ul{
+      list-style: none;
+      text-indent: -2em;
+    }
+    li{
+      padding: 2px 0 2px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Registracija į kursus</h1>
+  <hr>
+  <form method="POST" action="profile.php" enctype="multipart/form-data">
+    <ul>
+      <li>
+        <label for="first_name">Vardas:</label>
+        <input type="text" id="first_name" name="name">
+      </li>
+      <li>
+        <label for="last_name">Pavardė:</label>
+        <input type="text" id="last_name" name="surname">
+      </li>
+      <li>
+        <label for="city">Miestas: </label>
+        <select name="city" id="city">
+          <option value="Vilnius">Vilnius</option>
+          <option value="Kaunas">Kaunas</option>
+          <option value="Klaipėda">Klaipėda</option>
+        </select>
+      </li>
+    </ul>
+
+    <h2>Programavimo kalba:</h2>
+
+    <ul>
+      <li>
+        <label for="c_lang">C++</label>
+        <input type="checkbox" id="c_lang" name="lang[]" value="C++">
+      </li>
+      <li>
+        <label for="php_lang">PHP</label>
+        <input type="checkbox" id="php_lang" name="lang[]" value="PHP">
+      </li>
+      <li>
+        <label for="python_lang">Python</label>
+        <input type="checkbox" id="python_lang" name="lang[]" value="Python">
+      </li>
+    </ul>
+
+    <h2>Papildoma informacija:</h2>
+
+    <ul>
+      <li>
+        <textarea cols="40" rows="5" name="additional" placeholder="Pvz. : Turite C++ programavimo patirties."></textarea>
+      </li>
+      <li>
+        <label for="file_upload">Įkelkite failą:</label>
+        <input type="file" id="file_upload" name="image">
+      </li>
+      <li>
+        <button type="submit">Siųsti</button>
+      </li>
+    </ul>
+  </form>
+</body>
+</html>
