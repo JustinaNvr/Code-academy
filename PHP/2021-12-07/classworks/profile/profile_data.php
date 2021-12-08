@@ -8,6 +8,6 @@ $city = 'Miestas: ' . $_POST['city'];
 if (isset($_POST['lang'])) {
     $prog_lan = 'Programavimo kalba: ' . implode(", ", $_POST['lang']);
 } else {
-    $prog_lan = 'Nenurodytos';
+    $prog_lan = 'Programavimo kalba: Nenurodytos';
 }
 $additional = 'Papildoma informacija: ' . $_POST['additional'];
