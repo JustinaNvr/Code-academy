@@ -16,7 +16,8 @@ require_once 'profile_data.php';
         <img src="<?php echo $profilePicture; ?>">
     </div>
         <?php if (!empty($_POST['name'])): ?>
-            <h2><?php echo $name . '<br>' . $surname ?></h2>
+            <h2><?php echo $name ?></h2>
+            <h2><?php echo $surname ?></h2>
             <h3><?php echo $city ?></h3>
             <h3><?php echo $prog_lan ?></h3>
             <h3><?php echo $additional ?></h3>
