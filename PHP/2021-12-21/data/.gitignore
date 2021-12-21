@@ -1,3 +1,5 @@
 *
 !.gitignore
 !users.json
+!user.csv
+!user_.csv
