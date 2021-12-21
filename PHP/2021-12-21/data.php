@@ -1,5 +1,7 @@
 <?php
 
+//https://thisinterestsme.com/php-convert-json-csv/
+
 $users = file_get_contents('https://randomuser.me/api/');
 
 file_put_contents('data/users.json', $users);
