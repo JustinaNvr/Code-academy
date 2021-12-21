@@ -20,7 +20,7 @@
 <body>
   <h1>Registracija į kursus</h1>
   <hr>
-  <form method="POST" action="profile.php" enctype="multipart/form-data">
+  <form id="formAjax" method="POST" action="profile.php" enctype="multipart/form-data">
     <ul>
       <li>
         <label for="first_name">Vardas:</label>
@@ -64,13 +64,61 @@
         <textarea cols="40" rows="5" name="additional" placeholder="Pvz. : Turite C++ programavimo patirties."></textarea>
       </li>
       <li>
-        <label for="file_upload">Įkelkite failą:</label>
-        <input type="file" id="file_upload" name="image">
+        <label for="fileAjax">Įkelkite failą:</label>
+        <input type="file" id="fileAjax" name="fileAjax">
       </li>
       <li>
         <button type="submit">Siųsti</button>
       </li>
     </ul>
   </form>
+  <p id="status"></p>
+  <script>
+    let myForm = document.getElementById('formAjax');  // Our HTML form's ID
+    let myFile = document.getElementById('fileAjax');  // Our HTML files' ID
+    let statusP = document.getElementById('status');
+
+    myForm.onsubmit = function(event) {
+      event.preventDefault();
+
+      statusP.innerHTML = 'Uploading...';
+
+      // Get the files from the form input
+      let files = myFile.files;
+
+      // Create a FormData object
+      let formData = new FormData();
+
+      // Select only the first file from the input array
+      let file = files[0];
+
+      // Check the file type
+      if (!file.type.match('image.*')) {
+        statusP.innerHTML = 'The file selected is not an image.';
+        return;
+      }
+
+      // Add the file to the AJAX request
+      formData.append('fileAjax', file, file.name);
+
+      // Set up the request
+      let xhr = new XMLHttpRequest();
+
+      // Open the connection
+      xhr.open('POST', 'uploadHandling.php', true);
+
+      // Set up a handler for when the task for the request is complete
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          statusP.innerHTML = 'Upload complete!';
+        } else {
+          statusP.innerHTML = 'Upload error. Try again.';
+        }
+      };
+
+      // Send the data.
+      xhr.send(formData);
+    }
+  </script>
 </body>
 </html>

@@ -18,13 +18,13 @@ imagecopy($im, $stamp, imagesx($im) - $sx - $marge_right, imagesy($im) - $sy - $
 $red = imagecolorallocate($im, 255, 0, 0);
 
 // Set Path to Font File
-$font_path = './open-sans/OpenSans-BoldItalic.ttf';
+$font_path = './open-sans/open-sans.italic.ttf';
 
 // Set Text to Be Printed On Image
-$text = "This is rabbit!";
+$text = "This is a rabbit!";
 
 // Print Text On Image
-imagettftext($im, 25, 0, 25, 100, $red, $font_path, $text);
+imagettftext($im, 25, 0, 10, 300, $red, $font_path, $text);
 
 // Output and free memory
 header('Content-type: image/png');
