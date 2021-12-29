@@ -4,11 +4,11 @@
 
 class ArrayHelper
 {
-    public static function ArraySum($arr)
+    public static function arraySum($arr)
     {
         return array_sum($arr);
     }
-    public static function ArrayAverage($arr)
+    public static function arrayAverage($arr)
     {
         return self::ArraySum($arr) / count($arr);
     }
