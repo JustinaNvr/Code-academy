@@ -13,7 +13,6 @@ services:
   # docker run -d -t --name php-test-container -v /Users/kiril/Works/code-academy/PHP:/home/code-academy/PHP -w /home/code-academy/PHP php:7.4.26-alpine3.14
   # docker exec -it php-test-container /bin/sh
   php:
-    # image: php:7.4-fpm-bullseye
     build: ./docker-compose/php/
     container_name: codeacademy-php
     working_dir: /home/code-academy/PHP
@@ -21,8 +20,8 @@ services:
     volumes:
       - ./PHP:/home/code-academy/PHP
       - ./docker-compose/logs/php-fpm:/var/log/php-fpm
-    # env_file:
-    #     - ./PHP/2022-01-11/Quiz/.env
+    env_file:
+       - ./docker-compose/mysql/.env
 
   db-mariadb:
     container_name: codeacademy-db-mariadb

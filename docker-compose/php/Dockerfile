@@ -11,9 +11,10 @@ RUN apt-get update && apt-get install -y \
         zip libzip-dev \
         unzip
 
-RUN pecl install imagick-3.6.0 && docker-php-ext-enable imagick \
-    # && pecl install xdebug && docker-php-ext-enable xdebug \
-    && docker-php-ext-install zip \
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
+RUN docker-php-ext-install pdo pdo_mysql
+
+RUN docker-php-ext-install zip \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install -j$(nproc) gd
 
