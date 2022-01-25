@@ -18,7 +18,7 @@ RUN pecl install imagick-3.6.0 && docker-php-ext-enable imagick \
     && docker-php-ext-install -j$(nproc) gd
 
 COPY ./conf/* /usr/local/etc/php/conf.d
-COPY ./image-magick /etc/ImageMagick-6
+#COPY ./image-magick /etc/ImageMagick-6
 
 RUN echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen && \
     echo 'lt_LT.UTF-8 UTF-8' >> /etc/locale.gen  && \
